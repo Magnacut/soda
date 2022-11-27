@@ -1,0 +1,123 @@
+<html>
+<head>
+	<title>사진 일기</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+     
+        var Body = {
+  setColor:function (color){
+    //document.querySelector('body').style.color = color;
+    $('body').css('color', color);
+  },
+  setBackgroundColor:function (color){
+    // document.querySelector('body').style.backgroundColor = color;
+    $('body').css('backgroundColor', color);
+  }
+}
+function nightDayHandler(self){
+  if(self.value == 'Night'){
+    Body.setBackgroundColor('#1b1d25');
+   
+    self.value = 'Day';
+  } else {
+    Body.setBackgroundColor('white');
+    
+    self.value = 'Night';
+  }
+}
+    </script>
+<style>
+    .header_left{
+        width: 100px;
+        height: 35px;
+        border: 2px solid transparent;
+        font-size: 14px;
+        
+    }
+    
+    .header_right{
+        width: 100px;
+        height: 35px;
+        border: 2px solid transparent;
+        font-size: 14px;
+    }
+    .box{
+        text-align: center;
+        height: 16px;
+        width: 16px;
+        margin-right: 5px;
+    }
+    .banner{
+        float: right;
+        position: relative; 
+        left: -50%;
+    }
+    .banner .main{
+        position: relative;
+        left: 50%;
+        text-align: center;
+        padding: 0px 0;
+    }
+    .pic{
+        float: right;
+        position: relative; 
+        left: -50%;
+        padding-top: 50px;
+    }
+    .pic .main{
+        position: relative;
+        left: 50%;
+        text-align: center;
+        padding: 5px 0;
+        
+    }
+    .clear {
+    clear: both;
+    }
+    #night_day{
+            height:25px;
+            background-color: antiquewhite;
+            border-color: antiquewhite;
+            font-style: oblique;
+    }
+</style>
+</head>
+
+<body>
+<div class="header">
+    <div class="header_left" style="float:left">
+        <div class="box" style="float:left; background-color:pink"><a href="https://www.instagram.com/me_or_no/" target="_blank" style="text-decoration-line: none">I</a></div>
+        <div class="box" style="float:left; background-color:green"><a href="https://www.naver.com" target="_blank" style="text-decoration-line: none">N</a></div>
+    </div>
+    <div class="header_right" style="float:right">
+        <div class="box" style="float:right">I</div>
+        <div class="box" style="float:right">N</div>
+        <input id="night_day" type="button" value="Night" onclick="nightDayHandler(this);">
+    </div>
+</div>
+
+<div class="clear"></div>
+<hr>
+<div class="banner">
+    <div class="main">
+    <a href="#"><img src="스크린샷 2022-11-26 오전 1.47.02.png" alt="My Image"></a>
+    </div>
+</div>
+
+<div class="clear"></div>
+<hr>
+<div class="pic">
+    <div class="main">
+            <img src="R720x0.jpeg" alt="My Image">
+    </div>
+</div> 
+
+<div class="clear"></div>
+
+</body>
+
+</html>
+        
