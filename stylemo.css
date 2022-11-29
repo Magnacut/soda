@@ -66,31 +66,31 @@
     .pics .row1{
         position: relative;
         left: 50%;
-        width: 550px;
-        height: 180px;
+        width: 373px;
+        height: 120px;
         
     }
     
     .pics .row1 .box{
         
         float:right;
-        width:175px;
-        height: 175px;
+        width:116px;
+        height: 116px;
         border:1px solid rgb(227, 217, 217);
     }
     .pics .row2{
         position: relative;
         left: 50%;
-        width: 550px;
-        height: 180px;
+        width: 373px;
+        height: 120px;
         
     }
     
     .pics .row2 .box{
         
         float:right;
-        width:175px;
-        height: 175px;
+        width:116px;
+        height: 116px;
         border:1px solid rgb(227, 217, 217);
     }
     .pics .row3{
@@ -110,7 +110,7 @@
         border:1px solid black;
     }
     .pics .box{
-        line-height: 170px;
+        line-height: 116px;
     }
     .bottom_con{
         max-width: 200%;
@@ -124,7 +124,7 @@
         left: 50%;
         border:1px solid transparent;
         background-color: rgb(255, 249, 241);
-        width:546px;
+        width:375px;
         height:auto;
         text-align: center;
         padding-top: 30px;
@@ -144,19 +144,19 @@
 }
 .phobox{
     height:auto;
-    width: 520px;
+    width: 375px;
     border: 3px dotted rgb(166, 172, 193);
     margin:5px;
     text-align: center;
     padding:5px 0;
 }
 .photo1{
-    width:500px;
+    width:355px;
     height:auto;
     
 }
 .phobox .text{
-    width:480px;
+    width:335px;
     margin:20px;
 }
 .full{
@@ -167,5 +167,5 @@
 }
 .photo2{
     width:autox;
-    height: 177px;
+    height: 116px;
 }
