@@ -1,0 +1,171 @@
+
+    .header_left{
+        width: 100px;
+        height: 35px;
+        border: 2px solid transparent;
+        font-size: 14px;
+        
+    }
+    
+    .header_right{
+        width: 100px;
+        height: 35px;
+        border: 2px solid transparent;
+        font-size: 14px;
+    }
+    .box{
+        text-align: center;
+        height: 16px;
+        width: 16px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .banner{
+        float: right;
+        position: relative; 
+        left: -50%;
+    }
+    .banner .main{
+        position: relative;
+        left: 50%;
+        text-align: center;
+        padding: 0px 0;
+    }
+    .pic{
+        float: right;
+        position: relative; 
+        left: -50%;
+        padding-top: 5px;
+    }
+    .pic .main{
+        position: relative;
+        left: 50%;
+        text-align: center;
+        padding: 5px 0;
+        
+    }
+    .clear {
+    clear: both;
+    }
+    #night_day{
+            height:25px;
+            background-color: antiquewhite;
+            border-color: antiquewhite;
+            font-style: oblique;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .pics {
+        float: right;
+        position: relative; 
+        left: -50%;
+        border:1px soild black;
+    }
+    .pics .row1{
+        position: relative;
+        left: 50%;
+        width: 550px;
+        height: 180px;
+        
+    }
+    
+    .pics .row1 .box{
+        
+        float:right;
+        width:175px;
+        height: 175px;
+        border:1px solid rgb(227, 217, 217);
+    }
+    .pics .row2{
+        position: relative;
+        left: 50%;
+        width: 550px;
+        height: 180px;
+        
+    }
+    
+    .pics .row2 .box{
+        
+        float:right;
+        width:175px;
+        height: 175px;
+        border:1px solid rgb(227, 217, 217);
+    }
+    .pics .row3{
+        position: relative;
+        left: 50%;
+        width: 550px;
+        height: 145px;
+        display: none;
+        
+    }
+    
+    .pics .row3 .box{
+        
+        float:right;
+        width:138px;
+        height: 138px;
+        border:1px solid black;
+    }
+    .pics .box{
+        line-height: 170px;
+    }
+    .bottom_con{
+        max-width: 200%;
+        height: auto;
+        float: right;
+        position: relative; 
+        left: -50%;
+    }
+    .bottom_con .bottom{
+        position: relative;
+        left: 50%;
+        border:1px solid transparent;
+        background-color: rgb(255, 249, 241);
+        width:546px;
+        height:auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+.nonmo{
+    display: none;
+}
+.center{
+    float: right;
+    position: relative; 
+    left: -50%;
+}
+.center .cencon{
+    position: relative;
+    left: 50%;
+}
+.phobox{
+    height:auto;
+    width: 520px;
+    border: 3px dotted rgb(166, 172, 193);
+    margin:5px;
+    text-align: center;
+    padding:5px 0;
+}
+.photo1{
+    width:500px;
+    height:auto;
+    
+}
+.phobox .text{
+    width:480px;
+    margin:20px;
+}
+.full{
+    border:1px solid transparent;
+    width:auto;
+    height: auto;
+    text-align: center;
+}
+.photo2{
+    width:autox;
+    height: 177px;
+}
