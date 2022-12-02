@@ -6,6 +6,14 @@
         font-size: 14px;
         
     }
+    .header_left .box{
+        margin:3px;
+    }
+    .header_left .box:hover{
+        width:30px;
+        height:30px;
+        font-size: 27px;
+    }
     
     .header_right{
         width: 100px;
@@ -52,16 +60,21 @@
             background-color: antiquewhite;
             border-color: antiquewhite;
             font-style: oblique;
+            border-radius: 5px;
+            margin-top: 3px;
+
     }
     img {
         max-width: 100%;
         height: auto;
+        border-radius: 1%
     }
     .pics {
         float: right;
         position: relative; 
         left: -50%;
         border:1px soild black;
+        
     }
     .pics .row1{
         position: relative;
@@ -123,7 +136,7 @@
         position: relative;
         left: 50%;
         border:1px solid transparent;
-        background-color: rgb(255, 249, 241);
+        background-color: rgb(254, 244, 232);
         width:375px;
         height:auto;
         text-align: center;
@@ -166,6 +179,26 @@
     text-align: center;
 }
 .photo2{
-    width:autox;
+    width:auto;
     height: 116px;
+}
+.pics .box:hover{
+    background-color: rgba(234, 234, 234, 0.576);
+}
+body{
+    background-color: rgb(255, 249, 241);
+    margin: 0px;
+}
+.night{
+    height:2000px;
+}
+.car1{
+    width: 50px;
+    height: 17px;
+    margin-left:0;
+}
+.car2{
+    width: 50px;
+    height: auto;
+    margin-left:0;
 }

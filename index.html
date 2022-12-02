@@ -12,37 +12,67 @@
         var Body = {
   setColor:function (color){
     //document.querySelector('body').style.color = color;
-    $('body').css('color', color);
+    $('.night').css('color', color);
   },
   setBackgroundColor:function (color){
     // document.querySelector('body').style.backgroundColor = color;
-    $('body').css('backgroundColor', color);
+    $('.night').css('backgroundColor', color);
   }
 }
 function nightDayHandler(self){
   if(self.value == 'Night'){
     Body.setBackgroundColor('#1b1d25');
-   
     self.value = 'Day';
+    Body.setColor('antiquewhite');
   } else {
-    Body.setBackgroundColor('white');
-    
+    Body.setBackgroundColor('rgb(255, 249, 241)');
     self.value = 'Night';
+    Body.setColor('black');
   }
 }
+
+  $(window).scroll(function () {
+    const scrollValue = $(window).scrollTop();
+    $('.main .this').css('border-radius',scrollValue);
+   $('.value').text(scrollValue);
+   if(scrollValue==-22){
+    $(location).attr("href", "index.html")
+   }
+   if(scrollValue<=320){
+   $('.row1').css('margin-left',scrollValue/2-160);
+   $('.row2').css('margin-left',-scrollValue/2+160);
+   $('.row3').css('margin-left',scrollValue/2-160);
+   }
+   if(scrollValue>320){
+    $('.row1').css('margin-left',0);
+   $('.row2').css('margin-left',0);
+   $('.row3').css('margin-left',0);
+   }
+   $('.car1').css('margin-left',scrollValue*2-100);
+   $('.car2').css('margin-left',1250-scrollValue*2);
+   if(scrollValue%2==1){
+   $('.car2').css('width',50);
+   }if(scrollValue%2==0){
+   $('.car2').css('width',40);
+   }
+}
+
+)   
+
     </script>
 
 </head>
 
 <body>
+<div class="night">
 <div class="header">
     <div class="header_left" style="float:left">
-        <div class="box" style="float:left; background-color:pink"><a href="https://www.instagram.com/me_or_no/" target="_blank" style="text-decoration-line: none">I</a></div>
-        <div class="box" style="float:left; background-color:#2DB400"><a href="https://www.naver.com" target="_blank" style="text-decoration-line: none">N</a></div>
+        <div class="box" style="float:left; background-color:pink; border-radius:3px"><a href="https://www.instagram.com/me_or_no/" target="_blank" style="text-decoration-line: none">I</a></div>
+        <div class="box" style="float:left; background-color:#2DB400; border-radius:3px"><a href="https://www.naver.com" target="_blank" style="text-decoration-line: none">N</a></div>
     </div>
     <div class="header_right" style="float:right">
         <div class="box" style="float:right">I</div>
-        <div class="box" style="float:right">N</div>
+        <div class="value" style="float:right">0</div>
         <input id="night_day" type="button" value="Night" onclick="nightDayHandler(this);">
     </div>
 </div>
@@ -59,13 +89,16 @@ function nightDayHandler(self){
 <hr>
 <div class="pic">
     <div class="main">
-            <img
+            <img class="this"
             
             src="R720x0.jpeg" alt="My Image">
     </div>
 </div> 
 
 <div class="clear"></div>
+<br>
+<span class="value">0</span>
+<div class="car1" style="border:1px solid black;"><img src="klein.png"></div>
 <br>
 <div class="pics">
     <div class="row1">
@@ -76,12 +109,12 @@ function nightDayHandler(self){
                 </div>
             </div>
             <div class="box">
-                사진
+                <a href="photo.html#target1"><img class="photo2" src="59F14410-F2A7-42CC-8607-8097934BE4CB_1_105_c.jpeg" alt="My Image"></a>
             </div>
         </div>
         
             <div class="box">
-                사진
+                <a href="photo.html#target1"><img class="photo2" src="59F14410-F2A7-42CC-8607-8097934BE4CB_1_105_c.jpeg" alt="My Image"></a>
             </div>
         
             <div class="box">
@@ -136,11 +169,15 @@ function nightDayHandler(self){
     </div>
     </div>
     <div class="clear"></div>
+    <div class="car2" style="border:1px solid black;"><img src="klein.png"></div>
+    
     <div class="full"><a href="photo.html">전체보기</a></div>
 
     <div class="clear"></div>
+</div>
     <div class="bottom_con">
         <div class="bottom">프론트엔드 웹개발 연습용 페이지입니다.</div>
+        <span class="value">0</span>
     </div>
    
 </div>
