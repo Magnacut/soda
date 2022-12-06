@@ -62,33 +62,33 @@ function nightDayHandler(self){
    }if(scrollValue%2==0){
    $('.car2').css('width',40);
    }
-   if(scrollValue<1060){
+   if(scrollValue<1260){
     $('.oo').css('display','none');
    }
-   if(scrollValue>1060){
+   if(scrollValue>1260){
     $('.oo').css('display','inline');
     }
-    if(scrollValue<1200){
+    if(scrollValue<1400){
     $('.oo2').css('display','none');
    }    
 
-    if(scrollValue>1200){
+    if(scrollValue>1400){
    
     $('.oo2').css('display','inline');
-    $('.oo2').css('left',1400*8-scrollValue*8);
+    $('.oo2').css('left',3000-scrollValue);
     
     }
-    if(scrollValue<1400){
+    if(scrollValue<3000){
     
     
     $('.oo3').css('display','none');
    }        
-   if(scrollValue>1400){
+   if(scrollValue>3000){
     $('.oo3').css('display','inline');
-    $('.oo3').css('top',1600*8-scrollValue*8);
+    $('.oo3').css('top',3800-scrollValue);
     $('.oo2').css('left',0);
    }
-   if(scrollValue>1600){
+   if(scrollValue>3800){
     $('.oo3').css('top',50);
     
    }        
@@ -113,7 +113,7 @@ function nightDayHandler(self){
         </div>
     </div>
     <div class="header_right" style="float:right">
-        
+
         <div class="value" style="float:right">0</div>
         <input id="night_day" type="button" value="Night" onclick="nightDayHandler(this);">
     </div>

@@ -203,7 +203,7 @@ body{
     margin: 0px;
 }
 .night{
-    height:2500px;
+    height:5000px;
 }
 .car1{
     width: 50px;
@@ -241,6 +241,7 @@ body{
     
 }
 .element {
-   overflow: hidden;
-   -webkit-overflow-scrolling: touch;
-}
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+/* 사파리에서 fixed 적용이 안 될 때 사용 */ 
+} 
