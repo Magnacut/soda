@@ -240,3 +240,7 @@ body{
     display: none;
     
 }
+.element {
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+}
